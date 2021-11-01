@@ -3,7 +3,7 @@
 """
 Python client manager class for Armor --ArmorPy.
 """
-
+from armor_api.armor_exceptions import ArmorServiceInternalError, ArmorServiceCallError
 from armor_msgs.srv import ArmorDirective, ArmorDirectiveList, ArmorDirectiveListRequest
 from armor_msgs.msg import _ArmorDirectiveReq
 from armor_manipulation_client import ArmorManipulationClient
